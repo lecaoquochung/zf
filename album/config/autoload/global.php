@@ -12,7 +12,7 @@
  */
 
 return [
-    // ...
+    // mysql
     'db' => array(
         'driver'            => 'Pdo_Mysql',
         'dsn'               => 'mysql:dbname=' .getenv('MYSQL_ENV_MYSQL_DATABASE') .';host=' .getenv('MYSQL_PORT_3306_TCP_ADDR'),
@@ -23,6 +23,7 @@ return [
         ),
      ),
 
+    // sqlite
     // 'db' => [
     //     'driver' => 'Pdo',
     //     'dsn'    => sprintf('sqlite:%s/data/zendphp.db', realpath(getcwd())),
