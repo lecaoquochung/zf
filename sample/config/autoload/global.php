@@ -23,10 +23,10 @@ return [
     //     ),
     //  ),
 
-    // 'db' => [
-    //     'driver' => 'Pdo',
-    //     'dsn'    => sprintf('sqlite:%s/data/zf.db', realpath(getcwd())),
-    // ],
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn'    => sprintf('sqlite:%s/data/zf.db', realpath(getcwd())),
+    ],
 
     // 'service_manager' => array(
     //      'factories' => array(

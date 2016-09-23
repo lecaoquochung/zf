@@ -22,9 +22,16 @@
 
 - Enable/Disable develoment status
 ```
-$ composer development-status
-$ composer development-enable
-$ composer development-disable
+./composer.phar development-status
+./composer.phar development-enable
+./composer.phar development-disable
+```
+
+- Zend package
+```
+./composer.phar require zendframework/zend-db
+./composer.phar require zendframework/zend-form
+./composer.phar require zendframework/zend-servicemanager
 ```
 
 - Reference
@@ -172,7 +179,7 @@ class AlbumController extends AbstractActionController
     public function addAction()
     {
     }
-
+in
     public function editAction()
     {
     }
