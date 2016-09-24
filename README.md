@@ -182,7 +182,7 @@ class AlbumController extends AbstractActionController
     public function addAction()
     {
     }
-    
+
     public function editAction()
     {
     }
@@ -926,13 +926,3 @@ return [
  - Commit
 - SQL Abstraction and Object Hydration https://docs.zendframework.com/tutorials/in-depth-guide/zend-db-sql-zend-hydrator/
  - Commit https://github.com/lecaoquochung/zendphp/commit/9d2e19ed053c847ca38e674239c82ce202fbe85a
-
-# Project 07: Album Application (zf2x)
-- [ ] Init
-
-
-## Init
-- https://framework.zend.com/manual/2.2/en/user-guide/skeleton-application.html
-`./composer.phar create-project --repository-url="https://packages.zendframework.com" zendframework/skeleton-application sample2x`
-
-## Medule
