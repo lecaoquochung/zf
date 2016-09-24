@@ -6,18 +6,18 @@
 - [ ] Init Lavarel framework
 - [ ] Project 01: Album Application (zf)
 - [ ] Project 02: Blog Application (zf)
-- [ ] Project 03: Album Application (cake)
-- [ ] Project 04: Blog Application (cake)
+- [ ] Project 03: Album Application (cake3x)
+- [ ] Project 04: Blog Application (cake3x)
 - [ ] Project 05: Album Application (lava)
 - [ ] Project 06: Blog Application (lava)
 
-## Setup environment
-- https://github.com/lecaoquochung/docker
+# Setup environment
+- Docker https://github.com/lecaoquochung/docker
 - Download Latest composer.phar https://getcomposer.org
- - `wget https://getcomposer.org/composer.phar`
+- `wget https://getcomposer.org/composer.phar`
 
-## Init Zend framework
-### Install Zend framework skeleton
+# Init Zend framework
+## Install Zend framework skeleton
 `./composer.phar create-project -s dev zendframework/skeleton-application zf`
 
 - Enable/Disable develoment status
@@ -34,14 +34,14 @@
 ./composer.phar require zendframework/zend-servicemanager
 ```
 
-### Zend Framework 2x
-`php composer.phar create-project --repository-url="https://packages.zendframework.com" zendframework/skeleton-application sample2x`
+## Zend Framework 2x
+`./composer.phar create-project --repository-url="https://packages.zendframework.com" zendframework/skeleton-application sample2x`
 
 - Reference
  - https://docs.zendframework.com/tutorials/getting-started/skeleton-application/
 
-## Init CakePHP framework
-### Install CakePHP framework skeleton
+# Init CakePHP framework
+## Install CakePHP framework skeleton
 - Requirement
  - HTTP Server. For example: Apache. Having mod_rewrite is preferred, but by no means required.
  - PHP 5.5.9 or greater (including PHP 7).
@@ -53,13 +53,13 @@
 ```
 - CakePHP installation http://book.cakephp.org/3.0/en/installation.html
 
-## Project 01: Album Application (zf)
+# Project 01: Album Application (zf 3x)
 - Init zf source code
 - [ ] Config module Album
 - [ ] Routing module Album
 - [ ] Database & Model for module Album
 
-### Config module Album
+## Config module Album
 - Step 1: Module structure
 ```
 /module
@@ -143,7 +143,7 @@ return [
  - https://github.com/lecaoquochung/album/commit/19ef562e87913d1188f2e46ef714375f6a1f9d6f
  - https://github.com/lecaoquochung/zendphp/commit/076aece0a0de0556fb4e85593cb1ee3a88984177 (It works)
 
-### Routing module Album
+## Routing module Album
 - Create route for module album configmodule.config.php
 ```
 'router' => [
@@ -369,7 +369,7 @@ public function getControllerConfig()
 Error: construct model in controller
 ```
 
-## Project 02: Blog Application (zf)
+# Project 02: Blog Application (zf)
 - Init source code
 - [ ] Init module Blog
 - [ ] Routing module Blog
@@ -377,7 +377,7 @@ Error: construct model in controller
 - [ ] Blog Database Interface
 - [ ] SQL Abstraction and Object Hydration
 
-### Init module Blog
+## Init module Blog
 ```
 module/
     Blog/
@@ -511,9 +511,9 @@ class ListController extends AbstractActionController
 <h1>Blog\ListController::indexAction()</h1>
 ```
 
-### Routing module Blog
+## Routing module Blog
 
-### Blog Model and ServiceManager
+## Blog Model and ServiceManager
 - module/Blog/src/Model/PostRepositoryInterface.php
 ```
 <?php
@@ -707,7 +707,7 @@ class ListControllerFactory implements FactoryInterface
 <?php endforeach ?>
 ```
 
-### Blog Database Interface
+## Blog Database Interface
 - module/Blog/src/Model/PostCommandInterface.php
 ```
 namespace Blog\Model;
@@ -740,7 +740,7 @@ interface PostCommandInterface
 }
 ```
 
-### SQL Abstraction and Object Hydration
+## SQL Abstraction and Object Hydration
 - data/posts.schema.sql
 ```
 CREATE TABLE posts (id INTEGER PRIMARY KEY AUTOINCREMENT, title varchar(100) NOT NULL, text TEXT NOT NULL);
@@ -917,7 +917,7 @@ return [
 ```
 
 
-### Reference
+## Reference
 - Blog Module https://docs.zendframework.com/tutorials/in-depth-guide/first-module/
  - Commit https://github.com/lecaoquochung/zendphp/commit/f0e297fcf721a57afc5be599a44438920ca096d7
 - Blog Model and ServiceManager https://docs.zendframework.com/tutorials/in-depth-guide/models-and-servicemanager/
@@ -926,3 +926,13 @@ return [
  - Commit
 - SQL Abstraction and Object Hydration https://docs.zendframework.com/tutorials/in-depth-guide/zend-db-sql-zend-hydrator/
  - Commit https://github.com/lecaoquochung/zendphp/commit/9d2e19ed053c847ca38e674239c82ce202fbe85a
+
+# Project 07: Album Application (zf2x)
+- [ ] Init
+
+
+## Init
+- https://framework.zend.com/manual/2.2/en/user-guide/skeleton-application.html
+`./composer.phar create-project --repository-url="https://packages.zendframework.com" zendframework/skeleton-application sample2x`
+
+## Medule
