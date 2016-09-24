@@ -1,23 +1,24 @@
 <?php
 namespace Album\Controller;
 
-use Album\Model\Album;
-use Album\Model\AlbumTable;
+use Album\Model\AlbumRepositoryInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 class AlbumController extends AbstractActionController
 {
-    private $table;
+    private $albumRepository;
 
-    // construct table model
-    // public function __construct(AlbumTable $table)
-    // {
-    //     $this->table = $table;
-    // }
+    public function __construct(AlbumRepositoryInterface $albumRepository)
+    {
+        $this->albumRepository = $albumRepository;
+    }
 
     public function indexAction()
     {
+        return new ViewModel([
+           'albums' => $this->albumRepository->findAllAlbums(),
+       ]);
     }
 
     public function addAction()
