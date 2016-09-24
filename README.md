@@ -144,7 +144,7 @@ return [
  - https://github.com/lecaoquochung/zendphp/commit/076aece0a0de0556fb4e85593cb1ee3a88984177 (It works)
 
 ## Routing module Album
-- Create route for module album configmodule.config.php
+- Create route for module album config module.config.php
 ```
 'router' => [
         'routes' => [
@@ -182,7 +182,7 @@ class AlbumController extends AbstractActionController
     public function addAction()
     {
     }
-in
+    
     public function editAction()
     {
     }
