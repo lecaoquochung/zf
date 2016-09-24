@@ -1,0 +1,9 @@
+<h1>Album</h1>
+
+<?php foreach ($this->albums as $album): ?>
+<article>
+  <h1 id="album<?= $album->getId() ?>"><?= $album->getTitle() ?></h1>
+
+  <p><?= $album->getText() ?></p>
+</article>
+<?php endforeach ?>

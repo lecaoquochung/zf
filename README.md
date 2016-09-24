@@ -34,6 +34,9 @@
 ./composer.phar require zendframework/zend-servicemanager
 ```
 
+### Zend Framework 2x
+`php composer.phar create-project --repository-url="https://packages.zendframework.com" zendframework/skeleton-application sample2x`
+
 - Reference
  - https://docs.zendframework.com/tutorials/getting-started/skeleton-application/
 
