@@ -26,6 +26,8 @@ return [
     'ZendDeveloperTools',
     'Zend\Router',
     'Zend\Validator',
+    'Zend\InputFilter',
+    'Zend\Filter',
     'Application',
     'Album',
     'Blog'
